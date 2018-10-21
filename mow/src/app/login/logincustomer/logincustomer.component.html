@@ -1,0 +1,48 @@
+<div *ngIf="flag==false; else p"class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <form #loginCustomerForm="ngForm" (ngSubmit)="login(loginCustomerForm.value)" >
+        <div class="form-group">
+          <input type="email" name="email" #email="ngModel" ngModel required class="form-control" placeholder="enter your email">
+        </div>
+        <div class="form-group">
+          <input type="password" #password="ngModel" ngModel name="password" class="form-control" placeholder="enter your password">
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-success">Login</button>   <button type="submit" class="btn btn-success a" (click)="s()">IF not Registered? signup</button>
+        </div>
+      </form>
+     
+    </div>
+  </div>
+</div>
+<ng-template #p>
+<div class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h3>STUDENT REGISTRATION</h3>
+      <form #customersignupform="ngForm" (ngSubmit)="signup(customersignupform.value)">
+        <div class="form-group">
+         <input type="text" #name="ngModel" placeholder="Enter your username" ngModel name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+         Email <input type="email" name="email" placeholder="Enter your email" #email="ngModel" ngModel class="form-control" required>
+        </div>
+        <div class="form-group">
+         Phone <input type="number" name="phone" placeholder="Enter your phone" #phone="ngModel" ngModel required class="form-control">
+        </div>
+        <div class="form-group">
+         Password <input type="password" #password="ngModel" placeholder="Enter your password" ngModel name="password" required class="form-control">
+        </div>
+        <div class="form-group">
+         Institute Name <input type="text" name="institute" placeholder="institute name" #institute="ngModel" ngModel class="form-control" required>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-success" >SignUp</button>
+        </div>
+      </form>
+    </div>
+  
+  </div>  
+  </div>
+</ng-template>

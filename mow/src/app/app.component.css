@@ -1,0 +1,95 @@
+footer{
+    background-color: #87cefa
+}
+
+
+body{
+    background-color: #3c4656;
+    
+    font-family: 'Roboto', sans-serif;
+
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+    
+    p {font-size: 16px;}
+    h1{color : orange}
+      h3{color : black}
+      video{float : right;
+         width:440px ;
+          height:240px}
+    
+    .margin {margin-bottom: 45px;}
+    .bg-1 {
+      background-color: white; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+    .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+    }
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .navbar {
+        font-family: 'Roboto', sans-serif;
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    
+    }
+    
+    .navbar-brand{
+    color: orange !important;
+    }
+    
+    body
+    * {
+    box-sizing: border-box;
+    }
+    
+    form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid orange;
+    float: left;
+    width: 80%;
+    }
+    
+    form.search button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        font-size: 17px;
+        border: 10px orange;
+        border-left: none;
+        cursor: pointer;
+    }
+    
+    
+    form.search button:hover {
+    background: #ffb347;
+    }
+    
+    
+   
+    
+    
+    
+    
