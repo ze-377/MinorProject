@@ -6,7 +6,7 @@ var dbshow = require('../models/projects')
  
 exports.findProject = (req,res) => {
 
-    dbshow.find((err,data)=>{
+    dbshow.find({},(err,data)=>{
         if(err){
             res.json({
                 success : false,
